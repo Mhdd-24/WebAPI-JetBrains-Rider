@@ -1,0 +1,50 @@
+@model VibeCodeUserMgmtCRUD.Models.User
+
+@{
+ViewData["Title"] = "User Details";
+}
+
+<div class="container">
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">User Details</h6>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-8">
+                    <dl class="row">
+                        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Name)</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Name)</dd>
+
+                        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Email)</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+                        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+                        <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+                        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.IsActive)</dt>
+                        <dd class="col-sm-9">
+                            @if (Model.IsActive)
+                            {
+                            <span class="badge bg-success">Active</span>
+                            }
+                            else
+                            {
+                            <span class="badge bg-danger">Inactive</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">
+                    <i class="fas fa-edit"></i> Edit
+                </a>
+                <a asp-action="Index" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left"></i> Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

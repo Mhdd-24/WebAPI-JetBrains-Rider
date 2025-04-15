@@ -1,0 +1,9 @@
+[
+  {
+    "Id": 1,
+    "Name": "test",
+    "Email": "test@gmail.com",
+    "PhoneNumber": "8220480599",
+    "IsActive": false
+  }
+]
