@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VibeCodeUserMgmtCRUD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0345332587207ad93dfced396c88a49aef7c63c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5e2d038d145744782b353d101cd4cd22144fc51")]
 [assembly: System.Reflection.AssemblyProductAttribute("VibeCodeUserMgmtCRUD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VibeCodeUserMgmtCRUD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
